@@ -3,13 +3,26 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "nyc playwright test",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report"
+  },
+  "nyc": {
+    "reporter": ["text", "lcov"],
+    "all": true,
+    "include": ["src/**/*.ts"], 
+    "exclude": ["**/*.test.ts", "node_modules/**"]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.51.1",
-    "@types/node": "^22.13.10"
+    "@types/node": "^22.13.10",
+    "dotenv": "^16.4.7",
+    "nyc": "^17.1.0",
+    "source-map-support": "^0.5.21"
   }
 }
