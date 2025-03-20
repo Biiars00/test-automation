@@ -48,7 +48,7 @@ A estrutura do projeto está organizada da seguinte maneira:
 - **tests/**: Contém os arquivos de teste, onde os cenários são descritos e executados.
 
 ```js 
-playwright-project/
+test-automation/
 │
 ├── .github/
 │   └── workflows/
