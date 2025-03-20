@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { LoginActions } from '../src/actions/loginActions';
-import { CheckoutInfoActions } from '../src/actions/CheckoutInfoActions';
+import { CheckoutInfoActions } from '../src/actions/checkoutInfoActions';
 
 let loginActions: LoginActions;
 let checkoutInfoActions: CheckoutInfoActions;
