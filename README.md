@@ -17,6 +17,9 @@ Para rodar este projeto, você precisa ter os seguintes pré-requisitos instalad
 
 - Node.js
 - Git
+- Arquivo `.env` com as respectivas credenciais
+
+> OBS: Para este projeto, foram utilizadas credenciais públicas encontradas no site do Sauce Demo. Porém, para fins de manter a boa prática, optei por utilizar variáveis de ambientes.
 
 ## 🎬 Instalação
 
@@ -41,8 +44,8 @@ Para rodar este projeto, você precisa ter os seguintes pré-requisitos instalad
 A estrutura do projeto está organizada da seguinte maneira:
 
 - **actions/**: Contém as classes responsáveis por agrupar as ações realizadas na aplicação.
-- **tests/**: Contém os arquivos de teste, onde os cenários são descritos e executados.
 - **config/**: Contém arquivos de configuração (como variáveis de ambiente e URL da aplicação).
+- **tests/**: Contém os arquivos de teste, onde os cenários são descritos e executados.
 
 ```js 
 playwright-project/
@@ -126,13 +129,13 @@ playwright-project/
 
 Para rodar os testes, basta executar o seguinte comando:
 
-`npm test`
+`npm run test`
 
 ## 📉 Relatórios de Cobertura
 
 Para gerar um relatório de cobertura de código, execute:
 
-`npm run test`
+`npm run test:coverage`
 
 A cobertura de código será exibida no terminal e os relatórios detalhados estarão disponíveis na pasta `coverage/lcov-report/index.html`.
 
