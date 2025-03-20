@@ -19,4 +19,4 @@ jobs:
       run: npm install
 
     - name: Run tests
-      run: nyc playwright test
+      run: npx playwright test
