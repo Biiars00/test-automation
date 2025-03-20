@@ -15,6 +15,12 @@ jobs:
       with:
         node-version: '22'
 
+    - name: Set environment variables
+      run: |
+        echo "URL=${{ secrets.URL }}" >> $GITHUB_ENV 
+        echo "USER=${{ secrets.USER }}" >> $GITHUB_ENV
+        echo "PASSWORD=${{ secrets.PASSWORD }}" >> $GITHUB_ENV
+
     - name: Install dependencies
       run: npm install
 
